@@ -14,5 +14,5 @@ function getRandomAlphabet(){
     // generate a random number from 0-25
     const index = Math.round(Math.random() *25);
     const alphabetByIndex = alphabets[index];
-    console.log(alphabetByIndex);
+    return alphabetByIndex;
 }
