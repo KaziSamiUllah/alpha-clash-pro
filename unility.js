@@ -7,6 +7,11 @@ function showElementByID(elemetnId){
     element.classList.remove('hidden');
 }
 
+function setBgColorByID(elemetntId){
+    const element = document.getElementById(elemetntId);
+    element.classList.add('bg-orange-300', 'text-black', 'font-bold');
+}
+
 function getRandomAlphabet(){
     // create an alphabet string or array
     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';

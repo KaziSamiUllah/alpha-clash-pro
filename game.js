@@ -15,6 +15,10 @@ function  continueGame(){
     const displayLetter = document.getElementById('letter-display');
     console.log(displayLetter.innerText);
     displayLetter.innerText = alphabet;
+
+    // hilight the key on keyboard
+    setBgColorByID(alphabet);
+    
 }
 
 function play(){
