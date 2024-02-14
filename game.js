@@ -62,11 +62,15 @@ function play(){
     showElementByID('play-ground');
     document.getElementById('life-left').innerText = 5;
     document.getElementById('score').innerText = 0;
+
     continueGame();
 }
 function showScore(){
     hideElementByID('play-ground', 'home');
     showElementByID('score-page');
+   const displayedAlphabet = document.getElementById('letter-display').innerText;
+   console.log(displayedAlphabet);
+   removeBgColorByID(displayedAlphabet);
 }
 function goBackHome(){
     hideElementByID('score-page','play-ground');
