@@ -7,9 +7,15 @@ function showElementByID(elemetnId){
     element.classList.remove('hidden');
 }
 
+
+
 function setBgColorByID(elemetntId){
     const element = document.getElementById(elemetntId);
-    element.classList.add('bg-orange-300', 'text-black', 'font-bold');
+    element.classList.add('bg-orange-300', 'text-black', 'font-bold','scale-105');
+}
+function removeBgColorByID(elemetntId){
+    const element = document.getElementById(elemetntId);
+    element.classList.remove('bg-orange-300', 'text-black', 'font-bold');
 }
 
 function getRandomAlphabet(){
@@ -20,4 +26,10 @@ function getRandomAlphabet(){
     const index = Math.round(Math.random() *25);
     const alphabetByIndex = alphabets[index];
     return alphabetByIndex;
+}
+
+function removeAllKeyBg(){
+    for(alphabet of alphabets){
+        removeBgColorByID(alphabet);
+    }
 }
