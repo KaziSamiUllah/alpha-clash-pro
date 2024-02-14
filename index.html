@@ -128,7 +128,7 @@
             </div>
         </section>
         <!-- score page -->
-        <section class="score flex flex-col justify-center min-h-screen items-center hidden">
+        <section id="score" class="flex flex-col justify-center min-h-screen items-center hidden">
            <div class="flex flex-col items-center gap-8 bg-purple-200 bg-opacity-20 p-10 rounded-3xl">
             <div class="text-white">
                 <h1 class="text-8xl">
@@ -136,7 +136,8 @@
                     <span>14</span>
                 </h1>
             </div>
-            <button class="btn text-white">Play Again</button>
+            <button onclick="play()" class="btn text-white">Play Again</button>
+            <button onclick="goBackHome()" class="btn">Home</button>
             <p>Practice makes you a pro</p>
            </div>
         </section>
